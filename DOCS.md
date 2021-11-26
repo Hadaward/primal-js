@@ -162,3 +162,20 @@
   console.log( rangedArray(1, 10, 2) ); // -> [ 1, 3, 5, 7, 9 ]
   ```
 </details>
+
+<details>
+  <summary>string object</summary>
+  
+  ```JavaScript
+  const {strinngg} = require("primal-js");
+
+  /**
+  * string is an object that carries constant strings, such as an ascii string (letters only).
+  */
+
+  // e.g:
+
+  console.log( string.ascii_letters ); // -> "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  console.log( string.digits ); // -> "0123456789"
+  ```
+</details>
