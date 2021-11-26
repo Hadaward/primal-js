@@ -141,3 +141,24 @@
   ...
   ```
 </details>
+
+<details>
+  <summary>rangedArray  function</summary>
+  
+  ```JavaScript
+  const {rangedArray} = require("primal-js");
+
+  /**
+  * rangedArray is a function that creates an array of x elements to y elements.
+  * @param {number} min
+  * @param {number} max
+  * @param {number} step optional
+  * @returns {Array}
+  */
+
+  // e.g:
+
+  console.log( rangedArray(1, 10) ); // -> [ 1, 2, 3, 4,  5, 6, 7, 8, 9, 10 ]
+  console.log( rangedArray(1, 10, 2) ); // -> [ 1, 3, 5, 7, 9 ]
+  ```
+</details>
