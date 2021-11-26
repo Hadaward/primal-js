@@ -88,8 +88,8 @@
   const {format} = require("primal-js");
 
   /**
-	* format is an object that carries string and object formatting functions.
-	*/
+  * format is an object that carries string and object formatting functions.
+  */
   
   /**
   * format.dateToString is a function that lets you format a date object into a string.
@@ -103,5 +103,41 @@
   
   console.log( format.dateToString('Y-M-DTH:m:S.sZ') ); // -> "2021-11-26T01:15:04.840Z" (by default uses new Date)
   console.log( format.dateToString('Y-M-DTH:m:S.sZ', dateObject) ); // -> "1995-12-17T03:24:00.000Z"
+  ```
+</details>
+
+<details>
+  <summary>mergeObjects function</summary>
+  
+  ```JavaScript
+  const {mergeObjects} = require("primal-js");
+
+  /**
+  * mergeObjects is a function that allows you to merge one or more objects into a single object.
+  * @param {Object} ...objects (vararg) 
+  * @returns {Object}
+  */
+
+  // e.g:
+  const firstObject = {
+    foo: 10,
+    bar: 32,
+  }
+
+  const secondObject = {
+    bar: 20,
+    foobar: 30
+  }
+
+  console.log(
+    firstObject,
+    secondObject
+  ); // -> { foo: 10, bar: 32 } { bar: 20, foobar: 30 }
+
+  console.log( mergeObjects(firstObject, secondObject) ); // -> { foo: 10, bar: 20, foobar: 30 }
+	
+  // PS: mergeObjects will always modify the first object,
+  // so if you don't want this behavior just add an empty object as the first parameter.
+  ...
   ```
 </details>
