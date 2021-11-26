@@ -80,3 +80,28 @@
   console.log( random.string(7) ); // -> "Av0Dl3e"
   ```
 </details>
+
+<details>
+  <summary>format object</summary>
+  
+  ```JavaScript
+  const {format} = require("primal-js");
+
+  /**
+	* format is an object that carries string and object formatting functions.
+	*/
+  
+  /**
+  * format.dateToString is a function that lets you format a date object into a string.
+  * @param {string} format 
+  * @param {Date} date optional
+  * @returns {string}
+  */
+
+  // e.g:
+  const dateObject = new Date("December 17, 1995 03:24:00");
+  
+  console.log( format.dateToString('Y-M-DTH:m:S.sZ') ); // -> "2021-11-26T01:15:04.840Z" (by default uses new Date)
+  console.log( format.dateToString('Y-M-DTH:m:S.sZ', dateObject) ); // -> "1995-12-17T03:24:00.000Z"
+  ```
+</details>
