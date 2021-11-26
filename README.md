@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to primal-js 👋</h1>
+<h1 align="center">Welcome to Primal-JS 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/primal-js" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/primal-js.svg">
