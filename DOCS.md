@@ -167,7 +167,7 @@
   <summary>string object</summary>
   
   ```JavaScript
-  const {strinngg} = require("primal-js");
+  const {string} = require("primal-js");
 
   /**
   * string is an object that carries constant strings, such as an ascii string (letters only).
